@@ -1,0 +1,48 @@
+:host {
+  display: block;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 16px;
+    padding-block: 12px;
+  
+    .cart {
+      .icon {
+        --md-icon-size: 32px;
+        --md-icon-weight: 600;
+        --md-icon-color: var(--md-sys-color-on-surface);
+      }
+    }
+  }
+}
+
+:host ::ng-deep ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+
+  li {
+    cursor: pointer;
+
+    a {
+      cursor: inherit;
+      text-decoration: none;
+      color: var(--md-sys-color-on-surface);
+      font-family: var(--md-sys-typescale-display-medium-font-family-name);
+      font-style: var(--md-sys-typescale-display-medium-font-family-style);
+      font-weight: var(--md-sys-typescale-display-medium-font-weight);
+      font-size: var(--md-sys-typescale-headline-medium-font-size);
+      letter-spacing: var(--md-sys-typescale-display-medium-tracking);
+      line-height: var(--md-sys-typescale-display-medium-height);
+      text-transform: var(--md-sys-typescale-display-medium-text-transform);
+      text-decoration: var(--md-sys-typescale-display-medium-text-decoration);
+    } 
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+

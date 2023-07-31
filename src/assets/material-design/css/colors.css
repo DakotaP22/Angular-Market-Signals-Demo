@@ -115,6 +115,21 @@
 .surface {
   background-color: var(--md-sys-color-surface);
 }
+.surface-1 {
+  background-color: color-mix(in srgb,var(--md-sys-color-inverse-primary) 5%, var(--md-sys-color-surface))
+}
+.surface-2 {
+  background-color: color-mix(in srgb,var(--md-sys-color-inverse-primary) 8%, var(--md-sys-color-surface))
+}
+.surface-3 {
+  background-color: color-mix(in srgb,var(--md-sys-color-inverse-primary) 11%, var(--md-sys-color-surface))
+}
+.surface-4 {
+  background-color: color-mix(in srgb,var(--md-sys-color-inverse-primary) 12%, var(--md-sys-color-surface))
+}
+.surface-5 {
+  background-color: color-mix(in srgb,var(--md-sys-color-inverse-primary) 14%, var(--md-sys-color-surface))
+}
 .surface-text {
   color: var(--md-sys-color-surface);
 }

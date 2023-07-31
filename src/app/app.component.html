@@ -1,2 +1,12 @@
-<router-outlet></router-outlet>
+<app-navbar title="Angular Market" [itemsInCart]="5">
+  <ul>
+    <li>
+      <a [routerLink]="['/shop/meat-and-seafood']" routerLinkActive="router-link-active">Meat & Seafood</a>
+    </li>
+    <li><a [routerLink]="['/shop/produce']" routerLinkActive="router-link-active">Produce</a></li>
+    <li><a [routerLink]="['/shop/dairy']" routerLinkActive="router-link-active">Dairy</a></li>
+    <li><a [routerLink]="['/shop/bakery']" routerLinkActive="router-link-active">Bakery</a></li>
+  </ul>
+</app-navbar>
 
+<router-outlet></router-outlet>
