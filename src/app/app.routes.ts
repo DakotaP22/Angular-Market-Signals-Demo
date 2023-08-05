@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { shopGuard } from './shop/shop.guard';
+import { shopGuard } from './core/guards/shop.guard';
 
 export const routes: Routes = [
   {
@@ -14,6 +14,7 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    loadComponent: () => import('./core/page-not-found/page-not-found.component').then((m) => m.PageNotFoundComponent),
+    loadComponent: () =>
+      import('./core/pages/page-not-found/page-not-found.component').then((m) => m.PageNotFoundComponent),
   },
 ];
