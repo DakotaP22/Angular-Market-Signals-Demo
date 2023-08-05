@@ -1,11 +1,4 @@
-import {
-  Injectable,
-  Signal,
-  computed,
-  effect,
-  inject,
-  signal,
-} from '@angular/core';
+import { Injectable, Signal, computed, effect, inject, signal } from '@angular/core';
 import { toSignal, takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Observable, startWith, tap } from 'rxjs';
@@ -38,12 +31,10 @@ export class AuthService {
   loaded: Signal<boolean> = computed(() => !this.state().loading);
 
   // events
-  authStateUpdated$: Observable<User | null> = this.fireAuth.authState.pipe(
-    takeUntilDestroyed()
-  );
+  authStateUpdated$: Observable<User | null> = this.fireAuth.authState.pipe(takeUntilDestroyed());
 
   // effects
-  private logState = effect(() => console.log(this.state()));
+  // private logState = effect(() => console.log(this.state()));
 
   constructor() {
     // reducers

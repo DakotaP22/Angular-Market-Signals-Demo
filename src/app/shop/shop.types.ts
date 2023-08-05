@@ -3,6 +3,7 @@ export type ShopItem = {
   name: string;
   price: number;
   unit: string;
+  brand: string;
   unitsInCart: number;
 };
 

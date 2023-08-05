@@ -29,6 +29,7 @@ const initialState: ShopState = {
 export class ShopService {
   afs = inject(AngularFirestore);
 
+  // state
   private state: WritableSignal<ShopState> = signal(initialState);
 
   // selectors

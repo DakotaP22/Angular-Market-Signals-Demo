@@ -14,5 +14,4 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 })
 export class AppComponent {
   title = 'Angular16-Standalone';
-  authSvc = inject(AuthService);
 }
