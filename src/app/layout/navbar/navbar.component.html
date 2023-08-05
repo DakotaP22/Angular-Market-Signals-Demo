@@ -3,7 +3,7 @@
   <nav>
     <ng-content />
   </nav>
-  <div class="cart">
+  <div class="cart" [style.opacity]="isAuthenticated ? 1 : 0">
     <md-icon class="icon">shopping_cart</md-icon>
   </div>
 </header>

@@ -1,5 +1,6 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, Input } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, Input, effect, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AuthService } from 'src/app/core/services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,8 +12,9 @@ import { CommonModule } from '@angular/common';
 })
 export class NavbarComponent {
   @Input({ required: true }) title!: string;
+  authSvc = inject(AuthService);
 
-  ngOnInit() {
-    console.log('Title: ', this.title);
-  }
+  isAuthenticated = this.authSvc.isAuthenticated;
+
+  logAuthenticated = effect(() => console.log(this.isAuthenticated()));
 }
