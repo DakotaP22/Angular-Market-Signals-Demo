@@ -1,0 +1,40 @@
+<aside class="surface-1">
+  <md-elevation></md-elevation>
+  <p class="title-medium">Filters</p>
+  <form (ngSubmit)="onSubmit($event)">
+    <div class="filter-section" name="price">
+      <label class="section-label" for="price-range-set">
+        Price
+        <hr />
+      </label>
+      <fieldset class="price-range" id="price-range-set">
+        <md-outlined-text-field label="Max Price" type="number" />
+        <md-outlined-text-field label="Min Price" type="number" />
+      </fieldset>
+    </div>
+    <div class="filter-section">
+      <label class="section-label" for="brand-list-set">
+        Brands
+        <hr />
+      </label>
+      <fieldset class="brand-list" id="brand-list-set">
+        <label>
+          <md-checkbox aria-label="Agree to terms and conditions"></md-checkbox>
+          Brand 1
+        </label>
+        <label>
+          <md-checkbox aria-label="Agree to terms and conditions"></md-checkbox>
+          Brand 2
+        </label>
+        <label>
+          <md-checkbox aria-label="Agree to terms and conditions"></md-checkbox>
+          Brand 3
+        </label>
+      </fieldset>
+    </div>
+    <!-- <div class="filter-controls">
+      <button>Filter</button>
+      <button>Reset</button>
+    </div> -->
+  </form>
+</aside>
