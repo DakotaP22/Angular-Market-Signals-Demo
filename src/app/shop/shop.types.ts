@@ -5,6 +5,7 @@ export type ShopItem = {
   unit: string;
   brand: string;
   unitsInCart: number;
+  img_src?: string;
 };
 
 export type ShopFilter = {

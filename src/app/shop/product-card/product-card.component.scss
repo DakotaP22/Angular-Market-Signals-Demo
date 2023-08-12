@@ -1,0 +1,32 @@
+:host {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 288px;
+    // border: 1px solid black;
+    border-radius: 8px;
+    --md-elevation-level: 5;
+    
+
+    img {
+        border-radius: 8px;
+        width: 200px;
+        height: 200px;
+        display: block; 
+    }
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    row-gap: 8px;
+
+    .product-info-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}

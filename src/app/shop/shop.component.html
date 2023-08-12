@@ -1,3 +1,9 @@
 <shop-filter />
 
-<section class="products"></section>
+<section class="shop-content">
+  <outlined-text-field class="search" label="Search" [formControl]="searchControl" />
+
+  <div class="products">
+    <shop-product-card *ngFor="let shopItem of items()" [shop-item]="shopItem" />
+  </div>
+</section>

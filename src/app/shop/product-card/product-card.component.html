@@ -1,0 +1,13 @@
+<md-elevation></md-elevation>
+<img class="product-image" [src]="shopItem.img_src" alt="Product Image" />
+<div class="product-info">
+  <span class="product-info-text title-medium">
+    <p class="item-name">{{ shopItem.name }}</p>
+    <p class="price-per-quantity">{{ shopItem | pricePerUnit }}</p>
+  </span>
+
+  <ng-container *ngIf="shopItem.unitsInCart > 0; else addToCart"></ng-container>
+  <ng-template #addToCart>
+    <md-filled-button class="add-to-card-btn">Add to Cart</md-filled-button>
+  </ng-template>
+</div>

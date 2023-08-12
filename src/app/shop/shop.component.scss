@@ -1,8 +1,31 @@
 :host {
-    display: flex;
+    display: grid;
     height: 100%;
+    grid-template-columns: 200px 1fr;
+    overflow: hidden;  
+      
+    .shop-content {
+        display: grid;
+        padding: 16px 64px;
+        place-content: center;
+        grid-template-rows: 50px 1fr;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        row-gap: 32px;
+    }
 
     .products {
-        flex-grow: 1;
+        overflow-y: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 202px);
+        grid-auto-rows: 288px;
+        column-gap: 16px;
+        row-gap: 24px;
+        justify-content: center;
     }
+
+    .add-to-cart-btn {
+        width: 50%;
+    }
+    
 }
