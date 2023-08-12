@@ -1,0 +1,9 @@
+<md-outlined-text-field
+  #input
+  [type]="type"
+  [label]="label"
+  [disabled]="disabled()"
+  class="md-outlined-text-field"
+  (onchange)="onChange($event)"
+  (focus)="onTouched()"
+/>
